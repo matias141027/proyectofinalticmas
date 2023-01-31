@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="modelocvstyles.css">
+
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <!-- contenedor principal -->
+    <div class="div__contenedor">
+
+        <!--Contenedor para relleno.
+            Se utiliza un div para evitar el uso de position absolute.
+            Sólo es visible es desktop y tablet.-->
+        <div class="div__contenedor--relleno"></div>
+
+        <!--aside para información personal 
+            Sólo es visible es desktop y tablet.-->
+        <aside class="aside__contenedor--informacion">
+            <header>
+                <img class="aside__header--perfil" src="images/image1.jpg" alt="foto de perfil">
+
+                <div>
+                    <h2>Información Personal</h2>
+                </div>
+
+                <div>
+                    <p><strong>Edad: </strong> 34 años</p>
+                </div>
+
+                <div>
+                    <p><strong>Estado Civil: </strong> Soltero</p>
+                </div>
+
+                <div>
+                    <p><strong>Nacionalidad: </strong> Argentino, Jujuy</p>
+                </div>
+            </header>
+
+            <footer>
+                <div>
+                    <h2>Contacto</h2>
+                </div>
+
+                <div>
+                    <img src="images/whatsapp.png" alt="whatsapp">
+                    <a href="http://wa.me/3884040397" target="_blank" rel="noopener noreferrer">Ir a whatsApp</a>
+                </div>
+
+                <div>
+                    <img src="./images/correo.png" alt="correo electrónico">
+                    <a href="nicolastorobaez24@gmail.com" target="_blank" rel="noopener noreferrer">Ir a E-mail</a>
+                </div>
+            </footer>
+        </aside>
+
+        <section class="section__contenedor--informacion">
+            <header>
+                <img class="section__header--perfil" src="./images/fotodeperfil.png" alt="foto de perfil">
+
+                <h1>Matías Toro</h1>
+
+                <!-- <img src="" alt=""> -->
+
+                <h2>Técnico Electromecánico</h2>
+            </header>
+
+            <main>
+                <!-- div de estudios -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar" src="images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir" class="ocultar" src="images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo">Estudios</h2>
+                    </div>
+
+                    <div id="estudios" class="section__main--informacion ocultar">
+                        <div class="section__main--subtitulos">
+                            <h3>E.E.T.N°1 Escolástico Zegada</h3>
+
+                            <div>
+                                <h4>Técnico Electromécanico</h4>
+                                <p>finalizado</p>
+                            </div>
+                        </div>
+
+                        <div class="section__main--subtitulos2">
+                            <h3>Universidad Nacional de Jujuy</h3>
+
+                            <div>
+                                <h4>Ingeniería Informática</h4>
+                                <p>incompleto (3° año)</p>
+                                <h4>Analista Programador Universitario</h4>
+                                <p>incompleto (1° año)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div de experiencia laboral -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar2" src="images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir2" class="ocultar" src="images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo2">Experiencia Laboral</h2>
+                    </div>
+
+                    <div id="experiencia" class="section__main--informacion ocultar">
+                        <div class="section__main--subtitulos">
+                            <h3>COMTEL</h3>
+
+                            <div>
+                                <h4>Técnico Instalador</h4>
+                                <p>Instalación Telefonia</p>
+                                <p>Instalación Cableado de Red</p>
+                            </div>
+                        </div>
+
+                        <div class="section__main--subtitulos">
+                            <h3>Canal 2 Jujuy Oficial</h3>
+
+                            <div>
+                                <h4>Técnico</h4>
+                                <p>Instalación red HFC</p>
+                                <p>Reparación/Mantenimiento red HFC</p>
+                                <p>Instalación red FTTH</p>
+                                <p>Supervisor Técnico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </main>
+
+            <footer>
+                <h2 class="div__link--margin">link de interés</h2>
+
+                <div class="div__link--margin">
+                    <img src="./images/github.png" alt="github">
+                    <a href="https://github.com/matias141027" target="_blank" rel="noopener noreferrer">github</a>
+                </div>
+
+                <div class="footer__contenedor--contacto">
+                    <div>
+                        <h2>Contacto</h2>
+                    </div>
+
+                    <div>
+                        <img src="images/whatsapp.png" alt="whatsapp">
+                        <a href="http://wa.me/3884040397" target="_blank" rel="noopener noreferrer">ir a whatsApp</a>
+                    </div>
+
+                    <div>
+                        <img src="images/correo.png" alt="correo electrónico">
+                        <p>nicolastorobaez24@gmail.com</p>
+                    </div>
+
+                </div>
+            </footer>
+        </section>
+
+        <script src="modelocv.js"></script>
+</body>
+
+</html>
